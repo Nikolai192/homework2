@@ -1,6 +1,105 @@
 public class Main {
     public static void main(String[] args) {
+        byte a = 100;
+        System.out.println("Значение переменной a с типом byte равно " + a);
+        short b = 32765;
+        System.out.println("Значение переменной b с типом short равно " + b);
+        int c = 100000000;
+        System.out.println("Значение переменной c с типом int равно " + c);
+        long d = 2546454846848L;
+        System.out.println("Значение переменной d с типом long равно " + d);
+        float k = 65.65498f;
+        System.out.println("Значение переменной k с типом float равно " + k);
+        double f = 35.36498765;
+        System.out.println("Значение переменной f с типом double равно " + f);
+        float oneNumber = 21.12f;
+        System.out.println(oneNumber);
+        long twoNumber = 987678965549L;
+        System.out.println(twoNumber);
+        float threeNumber = 2.786f;
+        System.out.println(threeNumber);
+        short fourNumber = 569;
+        System.out.println(fourNumber);
+        short fiveNumber = -159;
+        System.out.println(fiveNumber);
+        short sixNumber = 27897;
+        System.out.println(sixNumber);
+        byte sevenNumber = 67;
+        System.out.println(sevenNumber);
+        byte lydmilaPavlovna = 23;
+        byte annaSergeevna = 27;
+        byte ekaterinaAndreevna = 30;
+        short allPaper = 480;
+        short paperForOneChildren = (short) (allPaper / (lydmilaPavlovna + annaSergeevna + ekaterinaAndreevna));
+        System.out.println("На каждого ученика рассчитано " + paperForOneChildren + " листов бумаги");
+        byte bottle = 16;
+        byte oneTime = 2;
+        byte performance = (byte) (bottle / oneTime); //бутылок в минуту
+        System.out.println(performance + " бутылок в минуту");
+        byte twoTime = 20;
+        short firstPerfomance = (short) (twoTime * performance);
+        System.out.println("За 20 минут машина произвела "+firstPerfomance + " бутылок");
+        short threeTime = 60 * 24;
+        short twoPerfomance = (short) (threeTime * performance);
+        System.out.println("За сутки машина произвела "+twoPerfomance + " бутылок");
+        int threePerfomance = (int) (twoPerfomance * 3);
+        System.out.println("За 3 суток машина произвела "+threePerfomance + " бутылок");//в три раза больше чем за сутки, можно много решений писать, лень))
+        int fourPerfomance = (int) (threePerfomance * 10);
+        System.out.println("За 30 дней машина произвела "+fourPerfomance + " бутылок");
+        int fifePerfomance = (int) (twoPerfomance * 31);
+        System.out.println("За 31 день машина произвела "+fifePerfomance + " бутылок");
+        byte totalCans = 120; //всего было куплено банок краски
+        byte whitePaintsOneRoom = 2;
+        byte brownPaintsOneRoom = 4;
+        byte cansOneRoom = (byte) (whitePaintsOneRoom + brownPaintsOneRoom);
+        System.out.println("Всего " + cansOneRoom + " банок краски на один класс");
+        byte allRoom = (byte) (totalCans / cansOneRoom);
+        System.out.println(allRoom + " классов в школе");
+        byte allCansWhitePaints = (byte) (whitePaintsOneRoom * allRoom);
+        byte allCansBrownPaints = (byte) (brownPaintsOneRoom * allRoom);
+        System.out.println("В школе, где " +allRoom + " классов, нужно " + allCansWhitePaints + " банок белой краски и " + allCansBrownPaints + " банок коричневой краски");
+        byte banana = 5;
+        byte milk = 2;
+        byte iceCream = 2;
+        byte egg = 4;
+        byte wheightBanana = 80;
+        byte wheightMilk = 105;
+        byte wheightIceCream = 100;
+        byte wheightEgg = 70;
+        short wheightBreakFast = (short) (banana * wheightBanana + milk * wheightMilk + iceCream * wheightIceCream + egg * wheightEgg);
+        System.out.println(wheightBreakFast + " грамм масса завтрака");
+        float wheight = 1000f; //грамм в одном кг
+        float wheightBreakFastKg = (float) (wheightBreakFast / wheight);
+        System.out.println(wheightBreakFastKg + " киллограм в завтраке");
+        float excessWeight = 7f;
+        float oneWeightLoss = 0.25f;
+        float twoWeightLoss = 0.5f;
+        float firstOptionLossWeight = (float) (excessWeight / oneWeightLoss);
+        System.out.println(firstOptionLossWeight + " дней на потерю веса при похудеении на 250 грамм");
+        float twoOptionsLossWeight = (float) (excessWeight / twoWeightLoss);
+        System.out.println(twoOptionsLossWeight + " дней на потерю веса при похудении на 500 грамм");
+        float salaryMary = 67760f;
+        float salaryDenis = 83690f;
+        float salaryKris = 76230f;
+        float salaryIncrease = 0.1f;
+        float newSalaryMary = (float) (salaryMary + salaryMary * salaryIncrease);
+        System.out.println(newSalaryMary + " рублей получит Маша после повышения");
+        float newSalaryDenis = (float) (salaryDenis + salaryDenis * salaryIncrease);
+        System.out.println(newSalaryDenis + " рублей получит Денис после повышения");
+        float newSalaryKris = (float) (salaryKris + salaryKris * salaryIncrease);
+        System.out.println(newSalaryKris + " рублей получит Кристина после повышения");
+        float oneIncomeMaryYear = (float) (salaryMary * 12);
+        float oneIncomeDenisYear = (float) (salaryDenis * 12);
+        float oneIncomeKrisYear = (float) (salaryKris * 12);
+        float twoIncomeSalaryMary = (float) (newSalaryMary * 12);
+        float twoIncomeSalaryDenis = (float) (newSalaryDenis * 12);
+        float twoIncomeSalaryKris = (float) (newSalaryKris * 12);
+        float incomeSalaryMary = (float) (twoIncomeSalaryMary % oneIncomeMaryYear);
+        float incomeSalaryDenis = (float) (twoIncomeSalaryDenis % oneIncomeDenisYear);
+        float incomeSalaryKris = (float) (twoIncomeSalaryKris % oneIncomeKrisYear);
+        System.out.println("маша теперь получает " + newSalaryMary + " рублей. Годовой доход вырос на " + incomeSalaryMary + " рублей");
+        System.out.println("маша теперь получает " + newSalaryDenis + " рублей. Годовой доход вырос на " + incomeSalaryDenis + " рублей");
+        System.out.println("маша теперь получает " + newSalaryKris + " рублей. Годовой доход вырос на " + incomeSalaryKris + " рублей");
 
-        System.out.println("Hello world!");
     }
 }
